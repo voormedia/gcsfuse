@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/handle"
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
-	"github.com/googlecloudplatform/gcsfuse/internal/gcsx"
+	"github.com/simonwahlstrom/gcsfuse/internal/fs/handle"
+	"github.com/simonwahlstrom/gcsfuse/internal/fs/inode"
+	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
@@ -1306,7 +1306,7 @@ func (fs *fileSystem) RmDir(
 	//
 	// Yes, this is not atomic with the delete below. See here for discussion:
 	//
-	//     https://github.com/GoogleCloudPlatform/gcsfuse/issues/9
+	//     https://github.com/simonwahlstrom/gcsfuse/issues/9
 	//
 	//
 	var tok string

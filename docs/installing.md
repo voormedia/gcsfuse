@@ -103,7 +103,7 @@ Ensure that dependencies are present:
 
 Download and install the latest release package:
 
-    curl -L -O https://github.com/GoogleCloudPlatform/gcsfuse/releases/download/v0.27.0/gcsfuse-0.27.0-1.x86_64.rpm
+    curl -L -O https://github.com/simonwahlstrom/gcsfuse/releases/download/v0.27.0/gcsfuse-0.27.0-1.x86_64.rpm
     sudo rpm --install -p gcsfuse-0.27.0-1.x86_64.rpm
 
 <a name="other-distributions"></a>
@@ -124,12 +124,12 @@ Ensure that dependencies are present:
 
 If you are on a distribution that uses `.rpm` files for package management:
 
-    curl -L -O https://github.com/GoogleCloudPlatform/gcsfuse/releases/download/v0.27.0/gcsfuse-0.27.0-1.x86_64.rpm
+    curl -L -O https://github.com/simonwahlstrom/gcsfuse/releases/download/v0.27.0/gcsfuse-0.27.0-1.x86_64.rpm
     sudo rpm --install -p gcsfuse-0.27.0-1.x86_64.rpm
 
 Or one that uses `.deb` files:
 
-    curl -L -O https://github.com/GoogleCloudPlatform/gcsfuse/releases/download/v0.27.0/gcsfuse_0.27.0_amd64.deb
+    curl -L -O https://github.com/simonwahlstrom/gcsfuse/releases/download/v0.27.0/gcsfuse_0.27.0_amd64.deb
     sudo dpkg --install gcsfuse_0.27.0_amd64.deb
 
 On some systems it may be necessary to add the your user account to the `fuse`
@@ -188,10 +188,10 @@ the appropriate variable is set in your environment:
 
 To install or update gcsfuse, run:
 
-    go get -u github.com/googlecloudplatform/gcsfuse
+    go get -u github.com/simonwahlstrom/gcsfuse
 
 This will fetch the gcsfuse sources to
-`$GOPATH/src/github.com/googlecloudplatform/gcsfuse`, build them, and install a
+`$GOPATH/src/github.com/simonwahlstrom/gcsfuse`, build them, and install a
 binary named `gcsfuse` to `$GOPATH/bin`.
 
 [go]: http://tip.golang.org/doc/install/source

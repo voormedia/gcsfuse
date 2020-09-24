@@ -17,7 +17,7 @@ package inode_test
 import (
 	"testing"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/fs/inode"
+	"github.com/simonwahlstrom/gcsfuse/internal/fs/inode"
 	. "github.com/jacobsa/ogletest"
 )
 

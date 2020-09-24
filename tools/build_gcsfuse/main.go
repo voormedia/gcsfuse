@@ -89,7 +89,7 @@ func buildBinaries(dstDir, srcDir, version string, buildArgs []string) (err erro
 
 	// Make it appear as if the source directory is at the appropriate position
 	// in $GOPATH.
-	gcsfuseDir := path.Join(gopath, "src/github.com/googlecloudplatform/gcsfuse")
+	gcsfuseDir := path.Join(gopath, "src/github.com/simonwahlstrom/gcsfuse")
 	err = os.MkdirAll(path.Dir(gcsfuseDir), 0700)
 	if err != nil {
 		err = fmt.Errorf("MkdirAll: %v", err)
@@ -114,11 +114,11 @@ func buildBinaries(dstDir, srcDir, version string, buildArgs []string) (err erro
 		outputPath string
 	}{
 		{
-			"github.com/googlecloudplatform/gcsfuse",
+			"github.com/simonwahlstrom/gcsfuse",
 			"bin/gcsfuse",
 		},
 		{
-			"github.com/googlecloudplatform/gcsfuse/tools/mount_gcsfuse",
+			"github.com/simonwahlstrom/gcsfuse/tools/mount_gcsfuse",
 			path.Join("sbin", mountHelperName),
 		},
 	}

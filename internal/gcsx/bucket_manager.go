@@ -23,7 +23,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/googlecloudplatform/gcsfuse/internal/canned"
+	"github.com/simonwahlstrom/gcsfuse/internal/canned"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcscaching"
 	"github.com/jacobsa/ratelimit"
