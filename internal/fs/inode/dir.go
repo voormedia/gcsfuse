@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
+	"github.com/voormedia/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
 	"github.com/jacobsa/gcloud/gcs"

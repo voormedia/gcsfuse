@@ -32,8 +32,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/simonwahlstrom/gcsfuse/benchmarks/internal/format"
-	"github.com/simonwahlstrom/gcsfuse/benchmarks/internal/percentile"
+	"github.com/voormedia/gcsfuse/benchmarks/internal/format"
+	"github.com/voormedia/gcsfuse/benchmarks/internal/percentile"
 )
 
 var fDir = flag.String("dir", "", "Directory within which to write the file.")

@@ -27,27 +27,27 @@ install: true
 #
 #  *  Clone the git repo into a temporary location.
 #  *  Check out the commit of interest.
-#  *  rsync the git repo to $GOPATH/src/github.com/simonwahlstrom/gcsfuse
+#  *  rsync the git repo to $GOPATH/src/github.com/voormedia/gcsfuse
 #
 # Note that the directory name is camel case, instead of `googlecloudplatform`,
 # as used in our code to import sub-packages.
 #
 # Normally this is papered over by the fact that the default `install` step for
 # go does `go get -v ./...` from within  that directory. That winds up fetching
-# another copy into `$GOPATH/src/github.com/simonwahlstrom/gcsfuse`, so
+# another copy into `$GOPATH/src/github.com/voormedia/gcsfuse`, so
 # the imports resolve correctly. (But this is bad! We get the wrong versions if
 # commits are pushed quickly.)
 #
 # However we disabled the install step above, so this doesn't happen and
 # instead we get errors like the following:
 #
-#     mount.go:25:2: cannot find package "github.com/simonwahlstrom/gcsfuse/fs" in any of:
-#             /home/travis/gopath/src/github.com/simonwahlstrom/gcsfuse/vendor/github.com/simonwahlstrom/gcsfuse/fs (vendor tree)
-#             /home/travis/.gimme/versions/go/src/github.com/simonwahlstrom/gcsfuse/fs (from $GOROOT)
-#             /home/travis/gopath/src/github.com/simonwahlstrom/gcsfuse/fs (from $GOPATH)
+#     mount.go:25:2: cannot find package "github.com/voormedia/gcsfuse/fs" in any of:
+#             /home/travis/gopath/src/github.com/voormedia/gcsfuse/vendor/github.com/voormedia/gcsfuse/fs (vendor tree)
+#             /home/travis/.gimme/versions/go/src/github.com/voormedia/gcsfuse/fs (from $GOROOT)
+#             /home/travis/gopath/src/github.com/voormedia/gcsfuse/fs (from $GOPATH)
 #
 # Fix this by renaming the directory before testing.
 script:
   - cd $GOPATH/src/github.com/
   - mv GoogleCloudPlatform googlecloudplatform
-  - go test -v github.com/simonwahlstrom/gcsfuse/...
+  - go test -v github.com/voormedia/gcsfuse/...

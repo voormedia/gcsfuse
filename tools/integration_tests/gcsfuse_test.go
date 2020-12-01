@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/canned"
+	"github.com/voormedia/gcsfuse/internal/canned"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fusetesting"
 	. "github.com/jacobsa/oglematchers"

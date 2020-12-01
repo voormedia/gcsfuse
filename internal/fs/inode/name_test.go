@@ -17,7 +17,7 @@ package inode_test
 import (
 	"testing"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/fs/inode"
+	"github.com/voormedia/gcsfuse/internal/fs/inode"
 	. "github.com/jacobsa/ogletest"
 )
 

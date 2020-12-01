@@ -24,8 +24,8 @@ import (
 
 	"golang.org/x/net/context"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/fs/inode"
-	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
+	"github.com/voormedia/gcsfuse/internal/fs/inode"
+	"github.com/voormedia/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"

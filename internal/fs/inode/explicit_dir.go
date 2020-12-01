@@ -17,7 +17,7 @@ package inode
 import (
 	"time"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
+	"github.com/voormedia/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/timeutil"

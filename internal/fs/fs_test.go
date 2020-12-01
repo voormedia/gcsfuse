@@ -29,9 +29,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/fs"
-	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
-	"github.com/simonwahlstrom/gcsfuse/internal/perms"
+	"github.com/voormedia/gcsfuse/internal/fs"
+	"github.com/voormedia/gcsfuse/internal/gcsx"
+	"github.com/voormedia/gcsfuse/internal/perms"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"

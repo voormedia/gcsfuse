@@ -73,7 +73,7 @@ func build(
 			"git",
 			"clone",
 			"-b", commit,
-			"https://github.com/simonwahlstrom/gcsfuse.git",
+			"https://github.com/voormedia/gcsfuse.git",
 			gitDir)
 
 		var output []byte

@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/gcsx"
+	"github.com/voormedia/gcsfuse/internal/gcsx"
 	"github.com/jacobsa/gcloud/gcs"
 	"github.com/jacobsa/gcloud/gcs/gcsfake"
 	"github.com/jacobsa/timeutil"

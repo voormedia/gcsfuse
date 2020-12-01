@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/simonwahlstrom/gcsfuse/internal/fs/inode"
+	"github.com/voormedia/gcsfuse/internal/fs/inode"
 	"github.com/jacobsa/fuse"
 	"github.com/jacobsa/fuse/fuseops"
 	"github.com/jacobsa/fuse/fuseutil"
